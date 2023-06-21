@@ -33,9 +33,9 @@ echo CPU architecture: $architecture
 echo CPU core count: `expr $corePerSocket \* $socket`
 echo CPU maximum speed in a human friendly format: $maxSpeed
 echo Sizes of L1d caches: $l1d 'KB'
-echo Sizes of L1d caches: $l1i 'KB'
-echo Sizes of L1d caches: $l2 'MB'
-echo Sizes of L1d caches: $l3 'MB'
+echo Sizes of L1i caches: $l1i 'KB'
+echo Sizes of L2 caches: $l2 'MB'
+echo Sizes of L3 caches: $l3 'MB'
 echo ==============================
 echo
 
@@ -47,5 +47,5 @@ linuxDistro=$(lsb_release -a | grep 'Distributor ID' | awk '{print $3}')
 linuxRelease=$(lsb_release -a | grep 'Release' | awk '{print $2}')
 
 echo Linux distro: $linuxDistro
-echo Linux distro: $linuxRelease
+echo Linux Release: $linuxRelease
 echo ==============================
